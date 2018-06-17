@@ -4,8 +4,8 @@
     android:id="@+id/list_item"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
     android:padding="@dimen/activity_margin">
 
     <LinearLayout
@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#2B3D4D"
+            android:textColor="@color/activity_textColor"
             android:textStyle="bold" />
 
         <TextView
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#000000" />
+            android:textColor="@color/activity_textColor" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
                 android:fontFamily="sans-serif"
                 android:text="@string/currency_symbol"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#000000" />
+                android:textColor="@color/activity_textColor" />
 
             <TextView
                 android:id="@+id/price"
@@ -51,9 +51,10 @@
                 android:layout_marginLeft="6dp"
                 android:fontFamily="sans-serif"
                 android:textAppearance="?android:textAppearanceSmall"
-                android:textColor="#000000" />
+                android:textColor="@color/activity_textColor" />
         </LinearLayout>
     </LinearLayout>
+
     <RelativeLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -69,7 +70,6 @@
             android:textAllCaps="true"
             app:srcCompat="@drawable/star" />
     </RelativeLayout>
-
 
 
 </LinearLayout>
